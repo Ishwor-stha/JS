@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <style>
+        td {
+            padding-top: 1.5%;
+        }
+
+        #email {
+            width: 200%;
+        }
+    </style>
+    <h2>Online Enquiry</h2>
+    <p>Please enter your details into the fields below,we will respond to your enquiry shortly via email.</p>
+
+    <form action="https://www.google.com/" name="my-form" method="get">
+        <table>
+            <tr>
+                <td> First Name<sup>*</sup></td>
+                <td> Middle Name</td>
+                <td> Last Name<sup>*</sup></td>
+
+            </tr>
+            <tr>
+                <td> <input type="text" id="FirstName" name="Firstname" placeholder="Firstname" required></td>
+                <td> <input type="text" id="MiddleName" name="Middlename" placeholder="Middlename"></td>
+                <td> <input type="text" id="LastName" name="Lastname" placeholder="Lastname" required></td>
+            </tr>
+            <tr>
+                <td>Email<sup>*</sup></td>
+                <td></td>
+                <td>contact Number<sup>*</sup></td>
+
+            </tr>
+
+            <tr>
+                <td> <input type="email" id="email" name="email" placeholder="email@gmail.com" required></td>
+                <td></td>
+                <td> <input type="number" id="number" name="number" placeholder="Number" required></td>
+
+            </tr>
+            <tr>
+                <td>program<sup>*</sup></td>
+                <td>stream<sup>*</sup></td>
+
+            </tr>
+            <tr>
+                <td> <select name="education" id="education" required>
+                        <option value="">Choose</option>
+
+                        <option value="+2 program">10+2 Programs</option>
+                        <option value="Bachelor program">Bachelor Programs</option>
+                        <option value="Master program">Master Programs</option>
+
+                    </select> </td>
+                <td>
+                    <select name="educationCategory" id="educationCategory" required>
+                        <option value="">Choose</option>
+
+                        <option value="Maagement">Management</option>
+                        <option value="humanities">Humanities</option>
+                        <option value="Science">Science</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BBM">BBM</option>
+                        <option value="BBS">BBS</option>
+                        <option value="MBA">MBA</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table> <br>
+        <p>Any questions/concerns?</p>
+        <tr>
+
+            <textarea rows="10" cols="70" placeholder="Any questions/concerns?" id="questions" name="questions"
+                required></textarea></td>
+        </tr>
+        <br>
+        <br>
+        <input type="submit" name="sumit" id="submit">
+
+    </form>
+
+</body>
+
+</html>
